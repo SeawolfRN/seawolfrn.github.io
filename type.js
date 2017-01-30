@@ -24,9 +24,11 @@ document.addEventListener('DOMContentLoaded',function(event){
   // start a typewriter animation for a text in the dataText array
    function StartTextAnimation(i) {
      if (typeof dataText[i] == 'undefined'){
+        // Swap the image over
+        $('.contact').fadeIn();
         setTimeout(function() {
           StartTextAnimation(0);
-        }, 20000);
+        }, 30000);
      }
      // check if dataText[i] exists
     if (i < dataText[i].length) {
@@ -37,6 +39,8 @@ document.addEventListener('DOMContentLoaded',function(event){
      });
     }
   }
+  $('.contact').fadeOut();
+
   // start the text animation
   StartTextAnimation(0);
 });

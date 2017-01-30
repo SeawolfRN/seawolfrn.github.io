@@ -1,10 +1,22 @@
 <html>
 <head>
+  	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	<script src="type.js"></script>
+  <style type='text/css'>
+    .fadein { position:relative; width:50%; }
+    .fadein img { position:absolute; left:75%; top:20%; }
+  </style>
 </head>
 <body>
 	<p class="line-1 anim-typewriter">Advanced Threat Simulation</p>
+
+	<div style="height: 500px; padding-top:15%">
+		<div class="fadein">
+			<img class="fadein" src="hyperion_dark.png">
+		</div>
+		<p id="contact" class="line-1 anim-typewriter contact" style="display: none;">joe@hyperionbristol.co.uk</p>
+	</div>
 </body>
 </html>
